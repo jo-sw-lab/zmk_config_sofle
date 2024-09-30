@@ -22,11 +22,11 @@
             //               | GUI | ALT  | CTRL | LOWER|  ENTER |  | SPACE | RAISE| CTRL  | ALT   | GUI  |
 
             bindings = <
-&kp GRAVE  &kp N1  &kp N2    &kp N3    &kp N4     &kp N5                             &kp N6  &kp N7     &kp N8     &kp N9    &kp N0    &kp MINUS
-&kp ESC    &kp Q   &kp W     &kp E     &kp R      &kp T                              &kp Y   &kp U      &kp I      &kp O     &kp P     &kp BSPC
-&kp TAB    &kp A   &kp S     &kp D     &kp F      &kp G                              &kp H   &kp J      &kp K      &kp L     &kp SEMI  &kp SQT
-&kp LSHFT  &kp Z   &kp X     &kp C     &kp V      &kp B   &kp C_MUTE     &kp C_MUTE  &kp N   &kp M      &kp COMMA  &kp DOT   &kp FSLH  &kp RSHFT
-                   &kp LGUI  &kp LALT  &kp LCTRL  &mo 1   &lt 3 ENTER    &kp SPACE   &sl 2   &kp RCTRL  &kp RALT   &kp RGUI
+&kp GRAVE  &kp N1  &kp N2    &kp N3    &kp N4     &kp N5                              &kp N6  &kp N7     &kp N8     &kp N9    &kp N0    &kp MINUS
+&kp ESC    &kp Q   &kp W     &kp E     &kp R      &kp T                               &kp Y   &kp U      &kp I      &kp O     &kp P     &kp BSPC
+&kp TAB    &kp A   &kp S     &kp D     &kp F      &kp G                               &kp H   &kp J      &kp K      &kp L     &kp SEMI  &kp SQT
+&kp LSHFT  &kp Z   &kp X     &kp C     &kp V      &kp B   &kp C_MUTE     &kp C_MUTE   &kp N   &kp M      &kp COMMA  &kp DOT   &kp FSLH  &kp RSHFT
+                   &kp LGUI  &kp LALT  &kp LCTRL  &mo 1   &lt 3 ENTER    &lt 4 SPACE  &sl 2   &kp RCTRL  &kp RALT   &kp RGUI
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
@@ -61,11 +61,11 @@
             //              |      |       |       |      |      |  |      |      |      |       |      |
 
             bindings = <
-&trans  &trans            &trans            &trans            &trans       &trans                      &trans     &trans    &trans  &trans     &trans   &trans
-&trans  &kp LS(NUMBER_1)  &kp LS(NUMBER_2)  &kp LS(NUMBER_3)  &kp LS(N5)   &trans                      &kp PG_UP  &trans    &trans  &trans     &kp N0   &trans
-&trans  &kp LALT          &kp LCTRL         &kp LSHFT         &trans       &kp CLCK                    &kp LEFT   &kp DOWN  &kp UP  &kp RIGHT  &kp DEL  &kp BSPC
-&trans  &kp K_UNDO        &kp K_CUT         &kp K_COPY        &kp K_PASTE  &trans    &trans    &trans  &trans     &trans    &trans  &trans     &trans   &trans
-                          &trans            &trans            &trans       &trans    &trans    &trans  &trans     &trans    &trans  &trans
+&trans  &trans            &trans            &trans            &trans             &trans                              &trans         &trans            &trans                 &trans             &trans         &trans
+&trans  &kp LS(NUMBER_1)  &kp LS(NUMBER_2)  &kp LS(NUMBER_3)  &kp LS(NUMBER_4)   &kp LS(N5)                          &kp EQUAL      &kp GRAVE         &kp LS(SEMICOLON)      &kp SEMICOLON      &kp LS(EQUAL)  &trans
+&trans  &kp LS(COMMA)     &kp LS(PERIOD)    &kp SLASH         &kp LS(SLASH)      &kp LS(NUMBER_6)                    &kp LS(N8)     &kp LS(NUMBER_9)  &kp LS(LEFT_BRACKET)   &kp LEFT_BRACKET   &kp MINUS      &trans
+&trans  &trans            &trans            &kp BACKSLASH     &kp LS(BACKSLASH)  &kp LS(N7)        &trans    &trans  &kp LS(GRAVE)  &kp LS(NUMBER_0)  &kp LS(RIGHT_BRACKET)  &kp RIGHT_BRACKET  &kp LS(MINUS)  &trans
+                          &trans            &trans            &trans             &trans            &trans    &trans  &trans         &trans            &trans                 &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
@@ -83,11 +83,11 @@
 
         layer_4 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans   &trans  &trans   &trans                         &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &kp F12  &kp F5  &kp F10  &kp RS(F7)                     &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans   &trans  &trans   &kp RS(F11)                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans   &trans  &trans   &trans       &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                &trans   &trans  &trans   &trans       &trans    &trans  &trans  &trans  &trans  &trans
             >;
         };
     };
