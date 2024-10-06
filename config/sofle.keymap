@@ -42,11 +42,11 @@
             //               |     |      |      |      |        |  |       |      |       |       |      |
 
             bindings = <
-&trans       &kp F1    &kp F2        &kp F3     &kp F4         &kp F5                        &kp F6  &kp F7  &kp F8  &kp F9  &kp F10  &kp F11
-&trans       &kp HOME  &kp UP_ARROW  &kp END    &kp PAGE_UP    &kp INSERT                    &trans  &trans  &trans  &trans  &trans   &kp F12
-&kt LG(TAB)  &kp LEFT  &kp DOWN      &kp RIGHT  &kp PAGE_DOWN  &trans                        &trans  &trans  &trans  &trans  &trans   &trans
-&kp CAPS     &trans    &kp DELETE    &trans     &trans         &trans      &trans    &trans  &trans  &trans  &trans  &trans  &trans   &trans
-                       &trans        &trans     &trans         &trans      &trans    &trans  &trans  &trans  &trans  &trans
+&trans          &kp F1    &kp F2        &kp F3     &kp F4         &kp F5                        &kp F6  &kp F7  &kp F8  &kp F9  &kp F10  &kp F11
+&trans          &kp HOME  &kp UP_ARROW  &kp END    &kp PAGE_UP    &kp INSERT                    &trans  &trans  &trans  &trans  &trans   &kp F12
+&kt LG(TAB)     &kp LEFT  &kp DOWN      &kp RIGHT  &kp PAGE_DOWN  &trans                        &trans  &trans  &trans  &trans  &trans   &trans
+&sk LEFT_SHIFT  &trans    &kp DELETE    &trans     &trans         &trans      &trans    &trans  &trans  &trans  &trans  &trans  &trans   &trans
+                          &trans        &trans     &trans         &trans      &trans    &trans  &trans  &trans  &trans  &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
@@ -61,11 +61,11 @@
             //              |      |       |       |      |      |  |      |      |      |       |      |
 
             bindings = <
-&trans  &trans            &trans            &trans            &trans             &trans                              &trans         &trans            &trans                 &trans             &trans         &trans
-&trans  &kp LS(NUMBER_1)  &kp LS(NUMBER_2)  &kp LS(NUMBER_3)  &kp LS(NUMBER_4)   &kp LS(N5)                          &kp EQUAL      &kp GRAVE         &kp LS(SEMICOLON)      &kp SEMICOLON      &kp LS(EQUAL)  &trans
-&trans  &kp LS(COMMA)     &kp LS(PERIOD)    &kp SLASH         &kp LS(SLASH)      &kp LS(NUMBER_6)                    &kp LS(N8)     &kp LS(NUMBER_9)  &kp LS(LEFT_BRACKET)   &kp LEFT_BRACKET   &kp MINUS      &trans
-&trans  &trans            &trans            &kp BACKSLASH     &kp LS(BACKSLASH)  &kp LS(N7)        &trans    &trans  &kp LS(GRAVE)  &kp LS(NUMBER_0)  &kp LS(RIGHT_BRACKET)  &kp RIGHT_BRACKET  &kp LS(MINUS)  &trans
-                          &trans            &trans            &trans             &trans            &trans    &trans  &trans         &trans            &trans                 &trans
+&trans  &trans            &trans            &trans            &trans             &trans                              &trans      &trans            &trans                 &trans             &trans         &trans
+&trans  &kp LS(NUMBER_1)  &kp LS(NUMBER_2)  &kp LS(NUMBER_3)  &kp LS(NUMBER_4)   &kp LS(N5)                          &kp EQUAL   &kp GRAVE         &kp LS(SEMICOLON)      &kp SEMICOLON      &kp LS(EQUAL)  &trans
+&trans  &kp LS(COMMA)     &kp LS(PERIOD)    &kp SLASH         &kp LS(SLASH)      &kp LS(NUMBER_6)                    &kp LS(N8)  &kp LS(NUMBER_9)  &kp LS(LEFT_BRACKET)   &kp LEFT_BRACKET   &kp MINUS      &trans
+&trans  &trans            &trans            &kp BACKSLASH     &kp LS(BACKSLASH)  &kp LS(N7)        &trans    &trans  &kp TILDE2  &kp LS(NUMBER_0)  &kp LS(RIGHT_BRACKET)  &kp RIGHT_BRACKET  &kp LS(MINUS)  &trans
+                          &trans            &trans            &trans             &trans            &trans    &trans  &trans      &trans            &trans                 &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
@@ -73,11 +73,11 @@
 
         layer_3 {
             bindings = <
-&trans  &bt BT_SEL 0  &bt BT_SEL 1          &bt BT_SEL 2  &bt BT_NXT     &bt BT_PRV                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans        &trans                &trans        &trans         &trans                        &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans        &sk LC(LS(NUMBER_4))  &trans        &sk LS(LC(F))  &trans                        &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans        &trans                &trans        &trans         &trans      &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                      &trans                &trans        &trans         &trans      &trans    &trans  &trans  &trans  &trans  &trans
+&trans        &bt BT_SEL 0  &bt BT_SEL 1          &bt BT_SEL 2  &bt BT_NXT     &bt BT_PRV                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans        &trans        &trans                &trans        &trans         &trans                        &trans  &trans  &trans  &trans  &trans  &trans
+&kp CAPSLOCK  &trans        &sk LC(LS(NUMBER_4))  &trans        &sk LS(LC(F))  &trans                        &trans  &trans  &trans  &trans  &trans  &trans
+&trans        &trans        &trans                &trans        &trans         &trans      &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                            &trans                &trans        &trans         &trans      &trans    &trans  &trans  &trans  &trans  &trans
             >;
         };
 
