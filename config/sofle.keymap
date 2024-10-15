@@ -61,11 +61,11 @@
             //              |      |       |       |      |      |  |      |      |      |       |      |
 
             bindings = <
-&trans  &trans            &trans            &trans            &trans             &trans                              &trans        &trans            &trans                 &trans             &trans         &trans
-&trans  &kp LS(NUMBER_1)  &kp LS(NUMBER_2)  &kp LS(NUMBER_3)  &kp LS(NUMBER_4)   &kp LS(N5)                          &kp EQUAL     &kp GRAVE         &kp LS(SEMICOLON)      &kp SEMICOLON      &kp LS(EQUAL)  &trans
-&trans  &kp LS(COMMA)     &kp LS(PERIOD)    &kp SLASH         &kp LS(SLASH)      &kp LS(NUMBER_6)                    &kp LS(N8)    &kp LS(NUMBER_9)  &kp LS(LEFT_BRACKET)   &kp LEFT_BRACKET   &kp MINUS      &trans
-&trans  &trans            &trans            &kp BACKSLASH     &kp LS(BACKSLASH)  &kp LS(N7)        &trans    &trans  &kp LS(NUHS)  &kp LS(NUMBER_0)  &kp LS(RIGHT_BRACKET)  &kp RIGHT_BRACKET  &kp LS(MINUS)  &trans
-                          &trans            &trans            &trans             &trans            &trans    &trans  &trans        &trans            &trans                 &trans
+&trans  &trans            &trans            &trans            &trans             &trans                              &trans         &trans            &trans                 &trans             &trans         &trans
+&trans  &kp LS(NUMBER_1)  &kp LS(NUMBER_2)  &kp LS(NUMBER_3)  &kp LS(NUMBER_4)   &kp LS(N5)                          &kp EQUAL      &kp GRAVE         &kp LS(SEMICOLON)      &kp SEMICOLON      &kp LS(EQUAL)  &trans
+&trans  &kp LS(COMMA)     &kp LS(PERIOD)    &kp SLASH         &kp LS(SLASH)      &kp LS(NUMBER_6)                    &kp LS(N8)     &kp LS(NUMBER_9)  &kp LS(LEFT_BRACKET)   &kp LEFT_BRACKET   &kp MINUS      &trans
+&trans  &trans            &trans            &kp BACKSLASH     &kp LS(BACKSLASH)  &kp LS(N7)        &trans    &trans  &kp LS(GRAVE)  &kp LS(NUMBER_0)  &kp LS(RIGHT_BRACKET)  &kp RIGHT_BRACKET  &kp LS(MINUS)  &trans
+                          &trans            &trans            &trans             &trans            &trans    &trans  &trans         &trans            &trans                 &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
